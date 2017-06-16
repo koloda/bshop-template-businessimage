@@ -1,0 +1,39 @@
+.b-content__title small {
+	font-size: 66%;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.b-products_grid .g-col-3 {
+	width: 24.5%;
+}
+
+/*BUTTONS*/
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0.5em;
+    text-decoration: none;
+    background-color: #222;
+    border: 0;
+    border-radius: 2px;
+    color: #a6a6a6;
+}
+
+.btn:hover {
+	color: #fff;
+}
+
+.btn-block {
+	display: block;
+}
+
+.btn.disabled {
+	background-color: #aaa;
+	color: #000;
+	font-style: italic;
+	cursor: auto;
+}

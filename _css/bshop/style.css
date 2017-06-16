@@ -1,0 +1,19 @@
+.b-product_item {
+	padding: 0.5em;
+	border: 1px solid #eee;
+	text-align: center;
+}
+.b-product_item:hover {
+	border-color: #ddd;
+}
+.b-product_item .b-product_title a {
+	font-size: 16px;
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+	line-height: 2em;
+}
+
+.b-product_item .b-product_title a:hover {
+	text-decoration: underline;
+}
