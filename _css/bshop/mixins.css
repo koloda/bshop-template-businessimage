@@ -20,7 +20,7 @@
     background-color: #222;
     border: 0;
     border-radius: 2px;
-    color: #a6a6a6;
+    color: #e7e7e7;
 }
 
 .btn:hover {
@@ -32,7 +32,7 @@
 }
 
 .btn.disabled {
-	background-color: #aaa;
+	background-color: #e7e7e7;
 	color: #000;
 	font-style: italic;
 	cursor: auto;

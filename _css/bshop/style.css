@@ -1,7 +1,9 @@
+/*PRODUCTS*/
 .b-product_item {
 	padding: 0.5em;
 	border: 1px solid #eee;
 	text-align: center;
+	margin-top: 0.2em;
 }
 .b-product_item:hover {
 	border-color: #ddd;
@@ -16,4 +18,24 @@
 
 .b-product_item .b-product_title a:hover {
 	text-decoration: underline;
+}
+
+.b-product_item .b-product-image {
+	height: 240px;
+}
+
+.b-product_not_available {
+    margin-top: 1.5em;
+}
+
+/*CATEGORIES*/
+.b-category_desc {
+	margin-top: 2em;
+	padding-top: 2em;
+	border-top: 1px solid #eee;
+}
+
+.b-products_grid-pagination {
+	text-align: center;
+    margin-top: 1em;
 }
