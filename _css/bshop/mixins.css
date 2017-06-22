@@ -1,39 +1,46 @@
-.b-content__title small {
-	font-size: 66%;
-}
-
-.text-center {
-	text-align: center;
-}
-
-.b-products_grid .g-col-3 {
-	width: 24.5%;
-}
-
 /*BUTTONS*/
 .btn {
-    display: inline-block;
-    cursor: pointer;
-    line-height: 1;
-    padding: 0.5em;
-    text-decoration: none;
-    background-color: #222;
-    border: 0;
-    border-radius: 2px;
-    color: #e7e7e7;
+  display: inline-block;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0.5em;
+  text-decoration: none;
+  background-color: #222;
+  border: 0;
+  border-radius: 2px;
+  color: #e7e7e7;
 }
-
 .btn:hover {
-	color: #fff;
+  color: #ffffff;
 }
-
 .btn-block {
-	display: block;
+  display: block;
 }
-
+.btn-wide {
+  width: 100%;
+}
+.btn.btn-light,
 .btn.disabled {
-	background-color: #e7e7e7;
-	color: #000;
-	font-style: italic;
-	cursor: auto;
+  background-color: #e7e7e7;
+  color: #000;
+  cursor: auto;
+}
+.btn.btn-big {
+  font-size: 18.2px;
+  font-weight: 100;
+}
+.btn.disabled {
+  font-style: italic;
+}
+/*MIX*/
+/*typography*/
+.b-content__title small {
+  font-size: 66%;
+}
+.text-center {
+  text-align: center;
+}
+/*grid fixes*/
+.b-products_grid .g-col-3 {
+  width: 24.5%;
 }
