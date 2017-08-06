@@ -25,6 +25,13 @@
                     <div class="b-product_image b-content__item-image">
                         <img src="{echo $product->getImgSrc('picture', 560)}">
                     </div>
+                    <div class="b-product_image_gallery">
+                        {foreach $product->getBehavior('galleryBehavior')->getImages() as $image}
+                            <div class="b-product_image_gallery_item_preview">
+                                <img src="{echo $image->getUrl('xs')}" align="{$product.title}">
+                            </div>
+                        {/foreach}
+                    </div>
                 </div>
             </div>
             <div class="g-col-7 g-col-12_from-m">
@@ -36,12 +43,18 @@
                     </div>
                     <div class="b-product_controls">
                         <div class="g-row g-row_indent-20">
+                            {if $product.available}
                             <div class="g-col-3">
                                 <input class="b-product_controls__count" type="number" value="1" min="1" step="1"></input>
                             </div>
                             <div class="g-col-4">
                                 <input type="button" class=" btn btn-block btn-wide btn-big b-product_controls__buy" value="{tlang('Add to cart')}">
                             </div>
+                            {else:}
+                                <div class="g-col-12 b-product_not_available">
+                                    <i>{tlang('Not available')}</i>
+                                </div>
+                            {/if}
                         </div>
                     </div>
                 </div>
